@@ -29,6 +29,7 @@ svg {
 
 img {
   width: 300px;
+  height: 250px;
   object-fit: cover;
   transition: .5s ease;
   backface-visibility: hidden;
