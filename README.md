@@ -1,2 +1,2 @@
 # Art-Portfolio
-Portfolio Robert Qu's containing Art
+Portfolio containing Robert Qu's Art
