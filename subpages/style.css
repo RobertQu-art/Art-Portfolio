@@ -38,7 +38,15 @@ img {
   margin-right: auto;
 }
 
+.imgF{
+  width: 75%;
+  height: auto;
+}
 
+.imgFX{
+  width: 50%;
+  height: auto;
+}
 
 .middle {
   transition: .5s ease;
