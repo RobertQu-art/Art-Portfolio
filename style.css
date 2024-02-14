@@ -8,12 +8,13 @@
 
 html {
   box-sizing: border-box;
-  background-color: rgb(250, 232, 225);
+  background-color: #333333;
+  /**background-color: rgb(250, 232, 225);**/
 }
 
 
 .container {
-  padding: 30px 0px;
+  padding-top: 30px;
 }
 
 h1 {
@@ -21,6 +22,10 @@ h1 {
   color: white !important;
   padding: 10px 30px;
   display: inline-block;
+}
+
+h5 {
+  padding: 10px;
 }
 
 svg {
@@ -37,6 +42,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 1px 1px 5px 2px rgb(0 0 0 / 20%);
 }
 
 
