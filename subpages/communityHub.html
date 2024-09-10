@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<meta name="description" content="">
+    <title>Secure Messaging</title>
+
+ 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container text-center" style="padding-top: 30px;">
+    <h1>Past Projects</h1>
+    <h5>Robert Qu</h5>
+    <hr class="solid">
+    </div>
+    <section class="container">
+      <div class="row text-center" style ="display: flex; justify-content: center;">
+        <div class='.col-10 mx-auto my-3'>
+          <img style="height: auto; width: 65%;" src="../images/wtf_home.png"/>
+          <h5 style="font-weight:bold;padding-top:36px">Gaming Community Forum & Wiki</h5>
+          <h6>A community hub for the popular online multiplayer vehicular combat simulator War Thunder</h6>
+          <h6>One of my interests since childhood is aviation, with many of my early aspirations and passions revloving around it. Unsurprisingly, when a game that was intiailly created on the basis of flying World War II fighters in a simulator environment was announced, I was immediately enthralled and had to give the game a try. War Thunder has now been active and growing for over 10 years, and having been one of the first to explore this game, I felt the desire to create something as a token of appreciation to all these years of gameplay.</h6>
+          <h6>My plan was to build an online hub for players to share content and learn about the game, whether it be clips, screenshots, or Q&A style discussion posts. I wanted to build a site that fostered improvement and a shared appreciation of the game. The original goal was to include Wikis that had descriptions of in-game vehicles and guides, a forum section for discussion and posting of user content, and profiles allowing one to view their in-game profiles from the web browser.</h6>
+        </div>
+        <div class='.col-10 mx-auto my-3'>
+          <h5 style="font-weight:bold;padding-top:36px">Initial Designs</h5>
+          <h6>The initial concept was inspired by existing resources. Being such a large and old game, War Thunder already has many sites that serve as examples of what I intended to build. There is already an official wiki, forum, and player search, but I was hoping to combine all these aspects into a singular hub that would be more up to date and navigable.</h6>
+          <img class="imgF" style="padding: 15px;"src="../images/wtf_lofi.png"/>
+          <h6>Lo-Fi frames of the original concept</h6>
+          <img class="imgF" style="padding: 15px;"src="../images/wtf_sitemap.png"/>
+          <h6>Site Map that demonstrates user flow + functionalities</h6>
+          <h6>After drafting some basic frames to illustrate the intended layout of the pages, I also created an initial map to visualize each page that would eventually need to be developed. These were also labeled with short descriptions to clarify the technicalities of each page.</h6>
+        </div>
+        <div class='.col-10 mx-auto my-3'>
+            <h5 style="font-weight:bold;padding-top:36px">Building the Site</h5>
+            <img class="imgF" style="padding-bottom: 15px;" src="../images/wtf_template_ex.png"/>
+            <h6>The Structure: Utilizing EJS Templates</h6>
+            <h6>The initial process of constructing the site began with building the structure, in other words the HTML pages which everything would be displayed with. However, to meet the non-static nature of a forum and community page, I needed to account for the need to update pages as necessary. To meet this requirement, I used embedded JavaScript templates (EJS) to build each frame of the website. The JS essentially connected the HTML with the back end, allowing for efficient user inputs as well as the ability to update pages as new information was added and updated on the page. In the above example, the EJS displays an up-to-date list of posts directly from the server database.</h6>
+            <div style="display: flex; flex-direction: row;">
+              <img class="imgF" style="padding-top: 15px;"src="../images/codeExample1.png"/>
+            </div>
+        </div>
+        <div class='.col-10 mx-auto my-3'>
+            <h6>While many of the components had to be written from scratch, some could be refactored from other parts of the company's internal website. Such examples include the filter options, which were originally built for the patient and test result lists. Refactoring code greatly streamlined the process for certain components, but I often had to resort to researching and online documentation to implement certain features.</h6>
+            <img class="imgF" style="padding: 15px;"src="../images/codeExample3.png" />
+            <h6>For the actual structure of the page, we tried to stay as faithful as possible to the original designs I drafted in Figma. We used MUI elements for most of the build, as well as the icons to keep the theme. By the nature of being based in a React framework, the HTML was included and rendered through the Typescript files, allowing the page to be highly responsive</h6>
+            <h6>Over the process of building the app, some features were dropped while others were modified, such as the archive button now extending the lifetime of a message rather than saving it to a new mailbox, and the sent tab being removed altogether. Some stylistic changes were made as well, such as attached files now being static within the inbox footer component instead of scrolling with the message.</h6>
+          </div>
+        <div class='.col-10 mx-auto my-3'>
+            <h5 style="font-weight:bold;padding-top:36px">Final Product</h5>
+            <div style="padding-bottom: 15px;">
+              <iframe width="1080" height="615"
+              src="https://youtube.com/embed/hHTtylpBxUQ">
+              </iframe>
+            </div>  
+            <h6>Although I was unable to implement all of my originally planned functionalities into this final demo, I found it to be a successful project at exploring all the aspects of full stack web development. This project allowed me to not only fullfill a personal hobbyist desire of mine, it also served as a learning experience in understanding the various aspects of web development, such as utilizing databases, user experience, and more.</h6>
+          </div>
+        <div class='.col-10 mx-auto my-3'>
+          <a href="../projects.html">Back to Projects</a>
+        </div>
+    </div>
+    </section><hr class="solid" style="margin-bottom: 4cm;">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script> -->
+  </body>
+</html>
